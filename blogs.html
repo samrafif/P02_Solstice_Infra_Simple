@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bruh.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="images/Vector.png" type="image/x-icon">
+  <title>Blogs</title>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <nav class="topnav-container">
+    <a href="/">
+      <img src="images/Group 2.png" alt="">
+    </a>
+      <div class="topnav" id="myTopnav">
+      <div class="dropdown">
+          <span>Product <i class="fa fa-caret-down"></i></span>
+        <div class="dropdown-content">
+          <a href="/products/build.html"><i class="fa fa-server"></i>Build</a>
+          <a href="/products/data.html"><i class="fa fa-database"></i>Data</a>
+          <a href="/products/monitor.html"><i class="fa fa-search"></i>Monitor</a>
+          <a href="/products/connect.html"><i class="fa fa-plug"></i>Connect</a>
+          <a href="/products/safeguard.html"><i class="fa fa-check-square"></i>Safeguard</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <span>Developers <i class="fa fa-caret-down"></i></span>
+        <div class="dropdown-content">
+          <a href="https://websockets.readthedocs.io/en/stable/">Docs</a>
+          <a href="#">Changelog</a>
+          <a href="#">Contributing</a>
+          <a href="#">Open Source</a>
+        </div>
+      </div>
+      <a href="pricing.html">Pricing</a>
+      <a href="https://websockets.readthedocs.io/en/stable/">Docs</a>
+      <a href="/blogs.html">Blogs</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+<div class="main-content">
+  <br>
+  <br>
+  <footer>
+    <div class="footer-brand">
+      <img style="width: 170px;" src="images/Group 2.png" alt="">
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="cat-link-list">
+      <p class="link-list-header">
+        Product
+      </p>
+      <span><a href="#">Database</a></span>
+      <span><a href="#">Auth</a></span>
+      <span><a href="#">Connect</a></span>
+      <span><a href="#">Realtime</a></span>
+      <span><a href="#">Genai</a></span>
+      <span><a href="#">Monitor</a></span>
+    </div>
+    <div class="cat-link-list">
+      <p class="link-list-header">
+        Developers
+      </p>
+      <span><a href="#">Documentation</a></span>
+      <span><a href="#">Changelog</a></span>
+      <span><a href="#">Contributing</a></span>
+      <span><a href="#">Open Source</a></span>
+      <span><a href="#">SolsticeSquad</a></span>      
+    </div>
+    <div class="cat-link-list">
+      <p class="link-list-header">
+        Resources
+      </p>
+      <span><a href="#">Support</a></span>
+      <span><a href="#">System Status</a></span>
+      <span><a href="#">Become a Partner</a></span>
+      <span><a href="#">Integrations</a></span>
+      <span><a href="#">Experts</a></span>
+      <span><a href="#">Brand Assets / Logos</a></span>
+      <span><a href="#">Security and Compliance</a></span>
+      <span><a href="#">DPA</a></span>
+      <span><a href="#">SOC2</a></span>
+      <span><a href="#">HIPAA</a></span>      
+    </div>
+    <div class="cat-link-list">
+      <p class="link-list-header">
+        Company
+      </p>
+      <span><a href="#">Blog</a></span>
+      <span><a href="#">Customer Stories</a></span>
+      <span><a href="#">Careers</a></span>
+      <span><a href="#">Company</a></span>
+      <span><a href="#">Events & Webinars</a></span>
+      <span><a href="#">General Availability</a></span>
+      <span><a href="#">Terms of Service</a></span>
+      <span><a href="#">Privacy Policy</a></span>
+      <span><a href="#">Privacy Settings</a></span>
+      <span><a href="Humans.txt">Humans.txt</a></span>
+      <span><a href="Lawyers.txt">Lawyers.txt</a></span>
+      <span><a href="Security.txt">Security.txt</a></span>
+    </div>
+  </footer>
+  <hr>
+  <span class="copyright" style="filter: brightness(60%); font-size: 12px;">© PT Solstice LLC</span>
+</div>
+  <script>
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <script src="bruh.js"></script>
+  <script src="tabs.js"></script>
+</body>
+</html>

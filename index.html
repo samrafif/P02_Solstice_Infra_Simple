@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bruh.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="images/Vector.png" type="image/x-icon">
+  <title>Solstice</title>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <nav class="topnav-container">
+    <a href="/">
+      <img src="images/Group 2.png" alt="">
+    </a>
+      <div class="topnav" id="myTopnav">
+      <div class="dropdown">
+          <span>Product <i class="fa fa-caret-down"></i></span>
+        <div class="dropdown-content">
+          <a href="/products/build.html"><i class="fa fa-server"></i>Build</a>
+          <a href="/products/data.html"><i class="fa fa-database"></i>Data</a>
+          <a href="/products/monitor.html"><i class="fa fa-search"></i>Monitor</a>
+          <a href="/products/connect.html"><i class="fa fa-plug"></i>Connect</a>
+          <a href="/products/safeguard.html"><i class="fa fa-check-square"></i>Safeguard</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <span>Developers <i class="fa fa-caret-down"></i></span>
+        <div class="dropdown-content">
+          <a href="https://websockets.readthedocs.io/en/stable/">Docs</a>
+          <a href="#">Changelog</a>
+          <a href="#">Contributing</a>
+          <a href="#">Open Source</a>
+        </div>
+      </div>
+      <a href="pricing.html">Pricing</a>
+      <a href="https://websockets.readthedocs.io/en/stable/">Docs</a>
+      <a href="/blogs.html">Blogs</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+<div class="main-content">
+  <section class="section-header">
+    <h1>Build in a weekend</h1>
+    <h1 style="color: #FFC000;">Scale to the cosmos</h1>
+    <br>
+    <br>
+    <p class="header-detail-text">Solstice is an inter-planetary Firebase alternative.
+      Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, Planetary Backups, and Vector embeddings. </p>
+    <br>
+      <div class="button-group">
+      <button class="btn-base primary">Start Deploying</button>
+      <button class="btn-base"><i class="fa fa-book"></i> Docs</button>
+    </div>
+  </section>
+  <section class="section-products">
+    <!-- <div class="product-tile">
+      
+    </div> -->
+    <div class="product-cat-tile">
+      <p>BUILD</p>
+      <h2><b>Expand your infrastructure beyond Earth, reaching inter-planetary scale and achieving universal growth</b></h2>
+      <p>Integrate inter-planet connections into your infra without needing to license radio bands, powered and managed by Solstice Network, so you can focus on what matters most. </p>
+      <div class="product-list">
+        <a href="/products/connect.html#advanced-net">
+        <div class="product-item">
+          <div class="product-title"><img src="" alt=""><span>Inter-planetary Message Queue</span></div>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+        </a>
+        <hr>
+        <a href="/products/buid.html#compute">
+        <div class="product-item">
+          <div class="product-title"><img src="" alt=""><span>Lunar Edge Functions</span></div>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+        </a>
+        <hr>
+        <a href="/products/build.html#hosting">
+        <div class="product-item">
+          <div class="product-title"><img src="" alt=""><span>Multi-planetary CDN</span></div>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+        </a>
+      </div>
+    </div>
+    <div class="horizontal-hr"></div>
+    <div class="product-cat-tile">
+      <p>DATA</p>
+      <h2><b>Keep your data safe, with multi-planetary backups, with robust realtime aswell.</b></h2>
+      <p>Provision your database, store your files, archive your documents, without worry of any data loss, powered by our multi-planetary storage and archival servers.</p>
+      <div class="product-list">
+        <a href="/products/data.html#realtime">
+        <div class="product-item">
+          <div class="product-title"><img src="" alt=""><span>Tachyon Realtime DB</span></div>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </a>
+        <hr>
+        <a href="/products/data.html#storage">
+        <div class="product-item">
+          <div class="product-title"><img src="" alt=""><span>Simple Storage Pods</span></div>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </a>
+        <hr>
+        <a href="/products/data.html#storage">
+        <div class="product-item">
+          <div class="product-title"><img src="" alt=""><span>Solstice IceCap</span></div>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </a>
+      </div>
+    </div>
+  </section>
+  <section class="section-community">
+    <p>Works seamlessly with 20+ frameworks</p>
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="images/logos/material-symbols_android.svg" alt="">
+        <img src="images/logos/mdi_angular.svg" alt="">
+        <img src="images/logos/mdi_nuxt.svg" alt="">
+        <img src="images/logos/mdi_react.svg" alt="">
+        <img src="images/logos/ri_flutter-fill.svg" alt="">
+        <img src="images/logos/ri_nextjs-fill.svg" alt="">
+        <img src="images/logos/ri_svelte-fill.svg" alt="">
+      </div>
+    </div>
+    <!-- NOTE: TEMP INLINE STYLE -->
+    <h2 style="margin-top: 3rem;">Join the community</h2>
+    <br>
+    <span>Backed by a dedicated network of early supporters, collaborators, and contributors.</span>
+    <br>
+    <div class="button-group">
+      <button class="btn-base">Github Discussions <i class="fa fa-comment" aria-hidden="true"></i>
+    </button> 
+    <button class="btn-base">Discord Server <i class="fa fa-comment" aria-hidden="true"></i>
+    </button> 
+  </div>
+  <br>
+  <br>
+  <div class="testimonials-grid">
+    <div class="testimonial-item">
+      <div class="testimonial-header">
+        <div class="make-it-round">
+          <img src="images/pfps/Screenshot 2024-09-17 201835.png" alt="">
+        </div>
+        <h2>George Adams</h2>
+      </div>
+      <p>
+        <b>"Question: Best practices for using Solstice IceCap for multi-planetary backups?"</b>
+        <br>
+        <br>
+        Hi, Loving the Solstice API so far! Quick question: What's the recommended way to set up IceCap for real-time multi-planetary backups? I've been experimenting with the API, but I want to ensure I'm following the best approach for scaling across nodes. Any pointers would be appreciated!
+      </p>
+      <span><i>On Stackoverflow</i></span>
+    </div>
+    <div class="testimonial-item">
+      <div class="testimonial-header">
+        <div class="make-it-round">
+          <img src="images/pfps/Screenshot 2024-09-17 201654.png" alt="">
+        </div>
+        <h2>Alan Blevins</h2>
+      </div>
+      <p>
+        <b>"How to integrate Solstice API with multi-planetary data storage?"</b>
+        <br>
+        <br>
+        I'm trying to use the Solstice API to connect my database across multiple planetary nodes. The documentation mentions real-time sync via Tachyon DB, but I’m unclear on how to configure it. Has anyone done this? Any code samples or advice?      </p>
+        <span><i>On Github Discussions</i></span>
+      </div>
+    <div class="testimonial-item">
+      <div class="testimonial-header">
+        <div class="make-it-round">
+          <img src="images/pfps/Screenshot 2024-09-17 201812.png" alt="">
+        </div>
+        <h2>Lex Naveah</h2>
+      </div>
+      <p>
+        <b>"Solstice API: How to monitor data sync status with SauronEye?"</b>
+        <br>
+        <br>
+        I'm using Solstice to handle data syncing across planetary nodes, and I want to monitor the sync status in real time with SauronEye Monitor. I’ve connected it to my setup, but I’m not sure how to get detailed metrics from the API. Any tips or examples would help!      </p>
+        <span><i>On Stackoverflow</i></span>
+      </div>
+  </div>
+  </section>
+  <section class="section-genai"></section>
+  <section class="section-examples">
+    <h2>Start building in seconds</h2>
+    <p>Kickstart your next project with templates built by us and our community.</p>
+    <div class="testimonials-grid">
+      <div class="card-base">
+        <div class="card-image">
+          <img src="images/logos/bi_stripe.svg" alt="">
+          <img src="images/logos/ri_svelte-fill.svg" alt="">
+          <img src="images/logos/akar-icons_vercel-fill.svg" alt="">
+        </div>
+        <div class="card-content">
+          <div>
+            <h3>Stripe Subscriptions Starter</h3>
+            <span>A subscription starter kit for high-performance SaaS applications, powered by Stripe, Supabase, and Vercel.</span>
+          </div>
+          <a href="">View Template <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="card-base">
+        <div class="card-image">
+          <img src="images/logos/ri_flutter-fill.svg" alt="">
+        </div>
+        <div class="card-content">
+          <div>
+            <h3>Flutter Basic Notes App</h3>
+            <span>Get started with Supabase and Flutter by building a Notes app with auth, file storage, and database.</span>
+          </div>
+          <a href="">View Template <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="card-base">
+        <div class="card-image">
+          <img src="images/logos/ri_openai-fill.svg" alt="">
+          <img src="images/logos/ri_svelte-fill.svg" alt="">
+        </div>
+        <div class="card-content">
+          <div>
+            <h3>AI Chatbot Webapp</h3>
+            <span>A basic open-source AI chatbot app template built with Svelte, OpenAI, and Supabase.</span>
+          </div>
+          <a href="">View Template <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-api-examples">
+    <div class="api-example-header">
+      <h2>Effortless Integration Across iOS, Android, and Web</h2>
+      <p>Solstice offers comprehensive documentation and multi-platform SDKs, making it easy to develop and deploy apps for iOS, Android, the Web, Flutter, Unity, and beyond.</p>    </div>
+      <figure class="tabBlock">
+        <ul class="tabBlock-tabs">
+          <li class="tabBlock-tab is-active">User Auth</li>
+          <li class="tabBlock-tab">Archive file with IceCap</li>
+          <li class="tabBlock-tab">Realtime Read/Write</li>
+          <li class="tabBlock-tab">Subscribe to Notif Topic</li>
+          <li class="tabBlock-tab">Log custom Analytics event</li>
+        </ul>
+        <div class="tabBlock-content">
+          <div class="tabBlock-pane">
+            <div class="code-example">
+              <pre>
+              <code class="language-javascript">
+                // General example for user authentication
+
+                api.auth.signIn(email, password)
+                  .then(user => console.log('Authenticated:', user))
+                  .catch(error => console.error('Auth failed:', error));
+              </code>
+              </pre>
+            </div>
+          </div>
+          <div class="tabBlock-pane">
+            <div class="code-example">
+              <pre>
+              <code class="language-javascript">
+                // General example for archiving an image
+
+                const imageData = fs.readFileSync('image.png');
+                archive.save('archives/image.png', imageData)
+                  .then(() => console.log('Image archived'))
+                  .catch(error => console.error('Archive failed:', error));                
+              </code>
+              </pre>
+            </div>
+          </div>
+          <div class="tabBlock-pane">
+            <div class="code-example">
+              <pre>
+              <code class="language-javascript">
+                // General example for real-time read/write
+
+                db.write('messages', { userId: '123', text: 'Hello!' });
+                db.subscribe('messages', data => console.log('New message:', data));
+              </code>
+              </pre>
+            </div>
+          </div>
+          <div class="tabBlock-pane">
+            <div class="code-example">
+              <pre>
+              <code class="language-javascript">
+                // General example for subscribing to a notification topic
+
+                notifications.subscribe(userId, 'updates')
+                  .then(() => console.log('Subscribed!'))
+                  .catch(error => console.error('Subscription failed:', error));
+              </code>
+              </pre>
+            </div>
+          </div>
+          <div class="tabBlock-pane">
+            <div class="code-example">
+              <pre>
+              <code class="language-javascript">
+                // General example for logging a custom event
+
+                analytics.logEvent('missionComplete', { mission: 'Explore Mars' });
+              </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </figure>
+  </section>
+  <br>
+  <br>
+  <footer>
+    <div class="footer-brand">
+      <img style="width: 170px;" src="images/Group 2.png" alt="">
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="cat-link-list">
+      <p class="link-list-header">
+        Product
+      </p>
+      <span><a href="#">Database</a></span>
+      <span><a href="#">Auth</a></span>
+      <span><a href="#">Connect</a></span>
+      <span><a href="#">Realtime</a></span>
+      <span><a href="#">Genai</a></span>
+      <span><a href="#">Monitor</a></span>
+    </div>
+    <div class="cat-link-list">
+      <p class="link-list-header">
+        Developers
+      </p>
+      <span><a href="#">Documentation</a></span>
+      <span><a href="#">Changelog</a></span>
+      <span><a href="#">Contributing</a></span>
+      <span><a href="#">Open Source</a></span>
+      <span><a href="#">SolsticeSquad</a></span>      
+    </div>
+    <div class="cat-link-list">
+      <p class="link-list-header">
+        Resources
+      </p>
+      <span><a href="#">Support</a></span>
+      <span><a href="#">System Status</a></span>
+      <span><a href="#">Become a Partner</a></span>
+      <span><a href="#">Integrations</a></span>
+      <span><a href="#">Experts</a></span>
+      <span><a href="#">Brand Assets / Logos</a></span>
+      <span><a href="#">Security and Compliance</a></span>
+      <span><a href="#">DPA</a></span>
+      <span><a href="#">SOC2</a></span>
+      <span><a href="#">HIPAA</a></span>      
+    </div>
+    <div class="cat-link-list">
+      <p class="link-list-header">
+        Company
+      </p>
+      <span><a href="#">Blog</a></span>
+      <span><a href="#">Customer Stories</a></span>
+      <span><a href="#">Careers</a></span>
+      <span><a href="#">Company</a></span>
+      <span><a href="#">Events & Webinars</a></span>
+      <span><a href="#">General Availability</a></span>
+      <span><a href="#">Terms of Service</a></span>
+      <span><a href="#">Privacy Policy</a></span>
+      <span><a href="#">Privacy Settings</a></span>
+      <span><a href="Humans.txt">Humans.txt</a></span>
+      <span><a href="Lawyers.txt">Lawyers.txt</a></span>
+      <span><a href="Security.txt">Security.txt</a></span>
+    </div>
+  </footer>
+  <hr>
+  <span class="copyright" style="filter: brightness(60%); font-size: 12px;">© PT Solstice LLC</span>
+</div>
+  <script>
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <script src="bruh.js"></script>
+  <script src="tabs.js"></script>
+</body>
+</html>

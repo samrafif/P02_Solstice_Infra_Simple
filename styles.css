@@ -1,0 +1,787 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+/* GLOBAL START */
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --prim-color: #ffc000;
+  --global-trans-delay: 350ms;
+}
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-margin-block-start: 2rem;
+  /* border: 0.3px solid white; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+body {
+  margin: 0;
+  color: white;
+  background-color: var(--bg-color);
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--bg-color);
+  background: var(--prim-color);
+}
+
+::selection {
+  color: var(--bg-color);
+  background: var(--prim-color);
+}
+/* GLOBAL END */
+
+/* NAV START */
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown span {
+  color: white;
+  transition: color var(--global-trans-delay);
+}
+
+.dropdown:hover span {
+  color: var(--prim-color);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  /* margin-top: 2.7rem; */
+  background-color: #252525;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: var(--prim-color);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  opacity: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.topnav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.212);
+}
+
+.topnav-container img {
+  height: 2rem;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: var(--bg-color);
+  /* display: flex; */
+}
+
+.dropdown i {
+  rotate: -180deg;
+  transition: rotate var(--global-trans-delay);
+}
+
+.dropdown:hover i {
+  rotate: 0deg;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a,
+.dropdown {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: color var(--global-trans-delay);
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: var(--prim-color);
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* NAV END */
+
+/* MAIN START */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  /* width: 90vw; */
+  margin-left: 15%; /* ugh */
+}
+
+section {
+  width: 80%;
+}
+
+.section-header {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+}
+
+.header-detail-text {
+  width: 70%;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+.main-content h1 {
+  font-size: 4rem;
+  margin: 0;
+  line-height: 100%;
+}
+
+.btn-base {
+  padding: 0.7rem 1.4rem;
+  border-radius: 5px;
+  border: none;
+  opacity: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--global-trans-delay);
+}
+
+.button-group {
+  display: flex;
+  margin-right: 3rem;
+  gap: 1rem;
+}
+
+.btn-base:hover {
+  opacity: 85%;
+}
+
+.btn-base:active {
+  scale: 95%;
+}
+
+.primary {
+  background-color: var(--prim-color);
+}
+
+.card-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: border var(--global-trans-delay);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-image img {
+  height: 75px;
+  margin: 0.5rem;
+  filter: brightness(50%);
+}
+
+.card-image {
+  margin: 2rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #1a1a1a;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.card-content a {
+  font-size: 14px;
+  color: var(--text-color);
+  filter: brightness(60%);
+  transition: filter var(--global-trans-delay);
+}
+
+.card-base:hover a {
+  filter: brightness(100%);
+}
+
+.card-content span,
+.testimonial-item span {
+  color: var(--text-color);
+  filter: brightness(60%);
+}
+
+.card-base:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial-header img {
+  height: 3rem;
+}
+
+.horizontal-hr {
+  align-self: center;
+  width: 2px;
+  height: 400px; /* ugh */
+  opacity: 20%;
+  background-color: #ffffff;
+}
+
+hr {
+  opacity: 20%;
+  background-color: #ffffff;
+}
+
+.product-cat-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  /* height: 100%; */
+}
+
+.product-cat-tile h2 {
+  width: 80%;
+}
+
+.product-item {
+  padding: 1.5rem 0 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.make-it-round {
+  height: 3rem;
+  border-radius: 80px;
+  overflow: hidden;
+}
+
+.product-item i {
+  transition: scale var(--global-trans-delay);
+}
+
+.product-item:hover {
+  cursor: pointer;
+}
+
+.product-item:hover i {
+  scale: 150%;
+}
+
+.section-products {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  /* height: 100px; */ /* TODO: Fix later, make the prod lists aligned */
+}
+
+.section-community {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.testimonials-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.section-examples {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-api-examples {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.api-example-header {
+  width: 35%;
+}
+
+.api-example-header h1,
+.api-example-header p {
+  width: 80%;
+}
+
+footer {
+  margin-top: 10rem;
+  gap: 10rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.copyright {
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.3rem;
+}
+
+.social-icons i {
+  font-size: 30px;
+}
+
+.social-icons i,
+.cat-link-list a {
+  filter: brightness(60%);
+  transition: filter var(--global-trans-delay);
+}
+
+.cat-link-list a {
+  font-size: 14px;
+}
+
+.social-icons i:hover,
+.cat-link-list a:hover {
+  filter: brightness(100%);
+}
+
+.cat-link-list {
+  /* margin-left: ; */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.link-list-header {
+  font-size: 12px;
+}
+
+.dropdown-content i {
+  margin-right: 1rem;
+}
+
+/* SECTION CAROUSEL */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 1.5rem 0;
+  width: 80%;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--bg-color));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    var(--bg-color)
+  );
+}
+
+.logos:hover img {
+  /* animation-play-state: paused; */
+  scale: 85%;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+  transition: scale var(--global-trans-delay);
+}
+
+/* NOTE: I DON'T HAVE TIME, SO ENJOY 1000 LINE CSS FILE :D */
+.group::after,
+.tabBlock-tabs::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.tabBlock p,
+.tabBlock ol,
+.tabBlock ul {
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+}
+
+.tabBlock ol,
+.tabBlock ul {
+  padding: 0;
+  margin-left: 1.25rem;
+}
+
+.tabBlock-tabs {
+  list-style: none;
+  margin: 0 !important;
+}
+
+.tabBlock {
+  align-self: flex-start;
+  width: 65%;
+  margin: 0;
+}
+
+.tabBlock-tab {
+  background-color: var(--bg-color);
+  border-color: #ffffff1f;
+  border-left-style: solid;
+  border-top: solid;
+  border-width: 2px;
+  color: var(--text-color);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.625rem 0.1rem;
+  margin-bottom: 10px;
+  position: relative;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+.tabBlock-tab:last-of-type {
+  border-right-style: solid;
+}
+.tabBlock-tab::before,
+.tabBlock-tab::after {
+  content: "";
+  display: block;
+  height: 4px;
+  position: absolute;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+/* .tabBlock-tab::before {
+  background-color: transparent;
+  left: -2px;
+  right: -2px;
+  top: -2px;
+} */
+.tabBlock-tab::after {
+  background-color: var(--prim-color);
+  filter: brightness(60%);
+  bottom: -2px;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 700px) {
+  .tabBlock-tab {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+.tabBlock-tab.is-active {
+  position: relative;
+  color: var(--prim-color);
+  z-index: 1;
+}
+/* .tabBlock-tab.is-active::before {
+  background-color: transparent;
+} */
+.tabBlock-tab.is-active::after {
+  filter: brightness(100%);
+}
+
+.tabBlock-pane > :last-child {
+  margin-bottom: 0;
+}
+/* NOTE: Poopy caca */
+.testimonials-grid > .card-base {
+  width: 33.3%;
+}
+
+/* PRICING PAGE */
+
+.pricing-plans {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.pricing-plans h2 {
+  margin-bottom: 10px;
+}
+
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  gap: 0.5rem;
+}
+
+.pricing-plan i {
+  color: var(--prim-color);
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+  margin: 2rem 0;
+}
+
+.pricing-plan sub > i {
+  visibility: hidden;
+}
+
+.price h1 {
+  font-family: monospace;
+}
+
+.price span,
+.info-header,
+.pricing-plan sub {
+  filter: brightness(60%);
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header p {
+  width: 50%;
+}
+
+.section-main-build {
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  grid-auto-columns: 30%;
+}
+
+.grid-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.section-prod-cat-breakdown {
+  margin-top: 5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.prod-cat-breakdown-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.prod-cat-header {
+  width: 120%;
+}
+
+.prod-cat-breakdown-item {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  width: 40%;
+}
+
+.semi-header {
+  width: 39%;
+}
+
+.space-filler {
+  visibility: hidden;
+  height: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and not (max-width: 800px) {
+  .section-api-examples {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a {
+    display: none;
+  }
+
+  .topnav .dropdown {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .horizontal-hr {
+    width: 300px;
+    height: 2px; /* ugh */
+  }
+
+  .section-products,
+  .testimonials-grid {
+    flex-direction: column;
+  }
+
+  .section-api-examples {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabBlock,
+  .api-example-header {
+    width: 100%;
+  }
+
+  .pricing-plans {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .product-cat-tile {
+    width: 100%;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section-prod-cat-breakdown {
+    flex-direction: column;
+  }
+
+  .prod-cat-breakdown-item {
+    width: 100%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
