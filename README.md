@@ -28,4 +28,6 @@ With its sleek dark mode design and primary color of `#FFC000`, Solstice combine
 
 **Discover Solstice today and transform your interplanetary infrastructure into a powerhouse of efficiency and innovation.**
 
-For more information, visit our [website](#) or contact us at [info@solsticeinfra.com](mailto:info@solsticeinfra.com).
+For more information, visit our [website](#) or contact us at [info@solsticeinfra.com](mailto:info@solstice.com).
+
+# DISCLAIMER: THIS IS A FICTIONAL COMPANY FOR A PROJECT
