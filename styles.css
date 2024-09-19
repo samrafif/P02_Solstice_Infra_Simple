@@ -260,10 +260,11 @@ section {
 
 .blog-item h2 {
   transition: all 500ms;
+  font-weight: 200;
 }
 
 .blog-item:hover h2 {
-  font-weight: 300;
+  font-weight: 900;
 }
 
 .blog-item {
