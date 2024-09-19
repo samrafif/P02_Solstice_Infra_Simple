@@ -250,6 +250,26 @@ section {
   background-color: #1a1a1a;
   padding: 1rem;
   padding-bottom: 1.5rem;
+  height: 100%;
+}
+
+.blog-content-list {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.blog-item h2 {
+  transition: all 500ms;
+}
+
+.blog-item:hover h2 {
+  font-weight: 300;
+}
+
+.blog-item {
+  cursor: pointer;
+  margin-bottom: 3rem;
+  width: 60%;
 }
 
 .card-content a {
